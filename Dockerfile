@@ -2,9 +2,9 @@ FROM ubuntu:trusty
 
 MAINTAINER Yulian Slobodyan <y.slobodian@gmail.com>
 
-ENV VIDEOBRIDGE_BUILDNUM="450"
+ENV VIDEOBRIDGE_BUILDNUM="728"
 
-# These variables could be overriden to configure Prosody 
+# These variables could be overriden to configure Prosody
 ENV VIDEOBRIDGE_SECRET="fUb8iJ5aRk5Urg1Y"
 ENV XMPP_DOMAIN="example.com"
 ENV XMPP_SUBDOMAIN="jitsi-videobridge"
