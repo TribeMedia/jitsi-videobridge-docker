@@ -5,10 +5,10 @@ MAINTAINER Yulian Slobodyan <y.slobodian@gmail.com>
 ENV VIDEOBRIDGE_BUILDNUM="728"
 
 # These variables could be overridden to configure Prosody/ejabberd
-ENV VIDEOBRIDGE_SECRET="fUb8iJ5aRk5Urg1Y"
-ENV XMPP_DOMAIN="localhost"
+ENV VIDEOBRIDGE_SECRET="-secret-"
+ENV XMPP_DOMAIN="example.com"
 ENV XMPP_SUBDOMAIN="jitsi-videobridge"
-ENV XMPP_HOST="xmpp.example.com"
+ENV XMPP_HOST="localhost"
 ENV XMPP_PORT="5275"
 ENV APIS="xmpp"
 ENV MEDIA_MIN_PORT="10000"
