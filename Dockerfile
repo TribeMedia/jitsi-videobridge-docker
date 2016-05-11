@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-MAINTAINER Yulian Slobodyan <y.slobodian@gmail.com>
+MAINTAINER Mykhailo Lieibenson <gramatron@gmail.com>
 
 ENV VIDEOBRIDGE_BUILDNUM="728"
 
