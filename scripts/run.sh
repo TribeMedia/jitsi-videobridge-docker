@@ -8,4 +8,4 @@ exec jitsi-videobridge-linux-x64-$VIDEOBRIDGE_BUILDNUM/jvb.sh \
   --max-port=$MEDIA_MAX_PORT \
   --host=$XMPP_HOST \
   --port=$XMPP_PORT \
-  --apis=$APIS >> /var/log/jvb.log 2>&1
+  --apis=$APIS >> jvb.log 2>&1
