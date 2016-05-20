@@ -2,7 +2,7 @@ FROM debian:jessie
 
 MAINTAINER Mykhailo Lieibenson <gramatron@gmail.com>
 
-ENV VIDEOBRIDGE_BUILDNUM="728"
+ENV VIDEOBRIDGE_BUILDNUM="735"
 
 # These variables could be overridden to configure Prosody/ejabberd
 ENV VIDEOBRIDGE_SECRET="-secret-"
@@ -11,8 +11,8 @@ ENV XMPP_SUBDOMAIN="jitsi-videobridge"
 ENV XMPP_HOST="localhost"
 ENV XMPP_PORT="5275"
 ENV APIS="xmpp"
-ENV MEDIA_MIN_PORT="10000"
-ENV MEDIA_MAX_PORT="20000"
+ENV MEDIA_MIN_PORT="40000"
+ENV MEDIA_MAX_PORT="50000"
 
 # Install videobridge and dependencies
 USER root
@@ -34,5 +34,7 @@ USER jvb
 
 ADD conf/sip-communicator.properties /jvb/.sip-connumicator/sip-communicator.properties
 ADD scripts/run.sh /jvb/run.sh
+
+EXPOSE $XMPP_PORT $MEDIA_MIN_PORT-$MEDIA_MAX_PORT
 
 CMD ["/jvb/run.sh"]
