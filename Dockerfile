@@ -35,6 +35,6 @@ USER jvb
 ADD conf/sip-communicator.properties /jvb/.sip-connumicator/sip-communicator.properties
 ADD scripts/run.sh /jvb/run.sh
 
-EXPOSE $XMPP_PORT $MEDIA_MIN_PORT-$MEDIA_MAX_PORT
+EXPOSE 443 4443 $XMPP_PORT $MEDIA_MIN_PORT-$MEDIA_MAX_PORT
 
 CMD ["/jvb/run.sh"]
